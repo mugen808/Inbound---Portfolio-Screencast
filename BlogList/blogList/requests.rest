@@ -1,0 +1,100 @@
+GET http://localhost:3003/api/blogs
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbGFuaSIsImlkIjoiNjEzOGI0MzkxZmVhMjMwYzFmZmM4MDk2IiwiaWF0IjoxNjMxMzcxNTQ0LCJleHAiOjE2MzEzNzUxNDR9.9HJ979GxxRpOtoZuJhQpr0PNjQCKkqnKe9W8SQ_66eY
+
+{
+  "title": "Kleani you gonna make me quit",
+  "author": "JRR Tolken",
+  "url": "http://niceblog.com.br",
+  "likes": 21,
+  "user": "6138b4391fea230c1ffc8096"
+}
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbGFuaSIsImlkIjoiNjEzOGI0MzkxZmVhMjMwYzFmZmM4MDk2IiwiaWF0IjoxNjM1Nzc2ODQxLCJleHAiOjE2MzU3ODA0NDF9.xGWVtXCQ3b9X3J0pJX1HrQOnTY6c_gT5q4b18ipD4hw
+
+{
+  "title": "The Wedge - too crowded for what it is?",
+  "author": "Italo Medina",
+  "url": "http://niceblog.com.br",
+  "likes": 30,
+  "user": "6138b4391fea230c1ffc8096"
+}
+
+###
+DELETE http://localhost:3003/api/blogs/6149e1024794f4dd019272d8
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbGFuaSIsImlkIjoiNjEzOGI0MzkxZmVhMjMwYzFmZmM4MDk2IiwiaWF0IjoxNjMyMjM0MjA3LCJleHAiOjE2MzIyMzc4MDd9.TTPDJrhgK5PcvnHnfVu4X8NV9BbFvZiq-g19I9GqA_s
+
+###
+PUT http://localhost:3003/api/blogs/613a660b27242b5cbea844c1
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImthbGFuaSIsImlkIjoiNjEzOGI0MzkxZmVhMjMwYzFmZmM4MDk2IiwiaWF0IjoxNjMxNTQ2Njc2LCJleHAiOjE2MzE1NTAyNzZ9.0W7CHHf9MgPYkiutL_2W2Fb3jOcCqoTqE6Faed9CIxc
+
+{
+    "likes": 47
+}
+
+###
+GET http://localhost:3003/api/users
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "blogs": [],
+    "username": "kalani",
+    "name": "Kalani Brown",
+    "password": "salainen"
+}
+
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "blogs": [],
+    "username": "wick_john",
+    "name": "John Wick",
+    "password": "doggy"
+}
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "blogs": [],
+    "username": "harryp",
+    "name": "Harry Potter",
+    "password": "potter"
+}
+
+###
+
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "kalani",
+  "password": "salainen"
+}
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "harryp",
+  "password": "potter"
+}
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+  "username": "wick_john",
+  "password": "doggy"
+}

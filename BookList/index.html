@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Book Lister</title>
+</head>
+<body>
+    <main class="container">
+        <h1>The List of Books</h1>
+        <button class="new">New book</button>
+        <div class="flex-container">
+            <form action="" class="book-details" name="book" id="bookInfo" onsubmit="return false">
+                <div class="input-field">
+                    <input class="text-field" type="text" name="title" placeholder="Title" required>
+                    <input class="text-field" type="number" name="year" placeholder="Year" required>
+                </div>
+                <div class="input-field">
+                    <input class="text-field" type="text" name="author" placeholder="Author" required>
+                    <input class="text-field" type="number" name="rating" placeholder="Rating" min="0" required>
+                </div>
+            </form>
+            <div class="read-check">
+                <input type="radio" name="read" class="read" id="read" value="read" checked>
+                <label for="read">Read</label>
+                <input type="radio" name="read" class="read" id="not-read" value="read">
+                <label for="not-read">Not read</label>
+            </div>
+            <button class="add" type="submit" form="bookInfo">Add book</button>
+        </div>
+        <div class="list-container">
+            <table id="books-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th>Rating</th>
+                        <th>Read</th>
+                    </tr>    
+                </thead>
+                <tbody class="table-body">
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

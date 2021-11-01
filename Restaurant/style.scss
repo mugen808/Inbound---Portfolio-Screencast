@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FF674D;
+    font-family: 'Amatic SC', cursive;
+    font-size: 62.5%;
+}
+header {
+    display: flex;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFBDB;
+}
+#logo {
+    height: 15vh;
+    margin-right: 5rem;
+}
+.logo {
+    p {
+        letter-spacing: 1rem;
+        font-size: 3rem;
+        font-weight: 400;
+        font-family: 'Amatic SC', cursive;
+    }
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    button {
+        background-color: #FFFBDB;
+        border: none;
+        font-family: 'Amatic SC', cursive;
+        flex: 1;
+        font-size: 2rem;
+        margin: 1px;
+        cursor: pointer;
+        &:hover {
+            background-color: #FFEC51;
+        }
+    }
+}
+
+main {
+    height: 69vh;
+    width: 85vw;
+    margin: auto;
+    
+}
+
+#content {
+    .club {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #FFFBDB;
+        .text {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            .club-head {
+                padding-top: 1rem;
+                margin-bottom: .5rem;
+                font-size: 2.5rem;
+                align-self: center;
+                border-bottom: 1px solid black;
+            }
+            .club-subhead {
+                margin-left: 1rem;
+                font-size: 1.5rem;
+                align-self: flex-start;
+                border-bottom: 1px solid black;
+            }
+            .club-text {
+                font-size: 1.2rem;
+                letter-spacing: 2px;
+                line-height: 2rem;
+                padding: 1rem;
+            }
+        }
+    }
+    .plates {
+        background-color: #FFFBDB;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+
+        h1 {
+            text-align: center;
+            font-size: 4rem;
+            border-bottom: 1px solid black;
+            padding: 1rem;
+        }
+        h2 {
+            padding: 1rem;
+            font-size: 3rem;
+            margin-left: 10rem;
+        }
+        h3 {
+            font-size: 2rem;
+            padding: .5rem;
+            margin-left: 8rem;
+            border-bottom: 1px solid black;
+        }
+        p {
+            font-size: 1.5rem;
+            padding: .5rem;
+            margin-left: 3rem;
+        }
+        span {
+            padding: .5rem;
+            font-size: 1.5rem;
+            margin-left: 11rem;
+            
+        }
+        .plates-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .main-plates {
+            margin-right: 4rem;
+        }
+    }
+    
+}
+
+#club-img {
+    width: 35vw;
+    height: 69vh;
+}
+
+.cooks {
+    background-color: #FFFBDB;
+    margin-bottom: 1rem;
+    h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    
+    .cook-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .cooks-flex {
+            width: 35vw;
+            display: flex;
+            padding: 1rem;
+            padding-bottom: 2rem;
+            .cook-text {
+                display: flex;
+                flex-direction: column;
+                
+                h2 {
+                    font-size: 3rem;
+                    margin-bottom: 1rem;
+                    margin-left: 1rem;
+                }
+                p {
+                    font-size: 1.2rem;
+                    margin-left: 1rem;
+                    
+                }
+            }
+            .cook {
+                height: 25vh;
+                border-radius: 100px;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
+
+.home {
+    width: 100%;
+    height: 71vh;
+    #homeImage {
+        width: 100%;
+        object-fit: cover;
+    }
+}

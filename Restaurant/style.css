@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FF674D;
+  font-family: 'Amatic SC', cursive;
+  font-size: 62.5%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFBDB;
+}
+
+#logo {
+  height: 15vh;
+  margin-right: 5rem;
+}
+
+.logo p {
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: 'Amatic SC', cursive;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.buttons button {
+  background-color: #FFFBDB;
+  border: none;
+  font-family: 'Amatic SC', cursive;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 2rem;
+  margin: 1px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #FFEC51;
+}
+
+main {
+  height: 69vh;
+  width: 85vw;
+  margin: auto;
+}
+
+#content .club {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #FFFBDB;
+}
+
+#content .club .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+}
+
+#content .club .text .club-head {
+  padding-top: 1rem;
+  margin-bottom: .5rem;
+  font-size: 2.5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-bottom: 1px solid black;
+}
+
+#content .club .text .club-subhead {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-bottom: 1px solid black;
+}
+
+#content .club .text .club-text {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 2rem;
+  padding: 1rem;
+}
+
+#content .plates {
+  background-color: #FFFBDB;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+#content .plates h1 {
+  text-align: center;
+  font-size: 4rem;
+  border-bottom: 1px solid black;
+  padding: 1rem;
+}
+
+#content .plates h2 {
+  padding: 1rem;
+  font-size: 3rem;
+  margin-left: 10rem;
+}
+
+#content .plates h3 {
+  font-size: 2rem;
+  padding: .5rem;
+  margin-left: 8rem;
+  border-bottom: 1px solid black;
+}
+
+#content .plates p {
+  font-size: 1.5rem;
+  padding: .5rem;
+  margin-left: 3rem;
+}
+
+#content .plates span {
+  padding: .5rem;
+  font-size: 1.5rem;
+  margin-left: 11rem;
+}
+
+#content .plates .plates-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#content .plates .main-plates {
+  margin-right: 4rem;
+}
+
+#club-img {
+  width: 35vw;
+  height: 69vh;
+}
+
+.cooks {
+  background-color: #FFFBDB;
+  margin-bottom: 1rem;
+}
+
+.cooks h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cooks .cook-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.cooks .cook-container .cooks-flex {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  padding-bottom: 2rem;
+}
+
+.cooks .cook-container .cooks-flex .cook-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cooks .cook-container .cooks-flex .cook-text h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
+
+.cooks .cook-container .cooks-flex .cook-text p {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+
+.cooks .cook-container .cooks-flex .cook {
+  height: 25vh;
+  border-radius: 100px;
+  margin-right: 1rem;
+}
+
+.home {
+  width: 100%;
+  height: 71vh;
+}
+
+.home #homeImage {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

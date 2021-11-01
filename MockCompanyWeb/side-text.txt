@@ -1,0 +1,29 @@
+side-text
+
+.side-text {
+                margin-left: 1rem;
+                padding-left: 3rem;
+                font-size: 4rem;
+                .block {
+                    display: flex;
+                    .icons {
+                        color: #4f3d58;
+                        display: flex;
+                        flex-direction: column;
+                        i {
+                            margin-bottom: 4rem;
+                        }
+                    }
+                    .text {
+                        margin-left: 3rem;
+                        margin-top: 1rem;
+                        display: flex;
+                        flex-direction: column;
+                        p {
+                            margin-bottom: 6rem;
+                            font-size: 1.8rem;
+                            font-weight: 900;
+                        }
+                    }
+                }
+            }

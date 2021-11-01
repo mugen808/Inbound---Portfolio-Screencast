@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #03c6fc;
+	font-family: 'Rubik', sans-serif;
+}
+
+.main-container {
+	margin: 100px;
+	display: flex;
+	flex-direction: column;
+	color: white;
+}
+.temperature {
+	font-size: 140px;
+}
+
+.conditions {
+	font-size: 25px;
+}
+
+.city {
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.main-info {
+	display: flex;
+	align-items: center;
+}
+
+.temp-main {
+	margin-right: 40px;
+}
+
+.conditions-description {
+	text-transform: capitalize;
+}
+
+.temp-details * {
+	padding: 3px;
+}
+
+#search-field {
+	border-radius: 5px;
+	font-size: 17px;
+}
+
+#search-button {
+	font-size: 17px;
+	padding: 2px;
+	border-radius: 5px;
+}
